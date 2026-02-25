@@ -2,7 +2,7 @@ import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import Services from "@/components/landing/Services";
 import WhyUs from "@/components/landing/WhyUs";
-import RaccoonControlInfo from "@/components/landing/RaccoonControlInfo";
+import WildlifeRemovalInfo from "@/components/landing/WildlifeRemovalInfo";
 import Contact from "@/components/landing/Contact";
 import FAQ from "@/components/landing/FAQ";
 import Footer from "@/components/landing/Footer";
@@ -14,32 +14,32 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-slate-50">
       <Helmet>
-        <title>Raccoon control Southwest Ranches | Southwest Ranches Raccoon Pros</title>
-        <meta name="description" content="Looking for Raccoon control Southwest Ranches? Professional raccoon removal, damage repair, and humane exclusion services for Southwest Ranches properties. Call 3238801224 today!" />
-        <meta name="keywords" content="Raccoon control Southwest Ranches, Southwest Ranches wildlife removal, raccoon trapping Southwest Ranches, wildlife exclusion Southwest Ranches FL, pest control Southwest Ranches" />
-        <link rel="canonical" href="https://raccooncontrolsouthwestranches.vercel.app/" />
+        <title>wildlife removal gastonia nc | Gastonia Wildlife Removal Pros</title>
+        <meta name="description" content="Looking for professional wildlife removal gastonia nc? Specialist animal control, damage repair, and humane exclusion services for Gastonia properties. Call 3238801224 today!" />
+        <meta name="keywords" content="wildlife removal gastonia nc, Gastonia animal control, raccoon removal Gastonia, squirrel removal Gastonia NC, pest control Gastonia" />
+        <link rel="canonical" href="https://wildliferemovalgastonianc.vercel.app/" />
 
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "Southwest Ranches Raccoon Pros",
+            "name": "Gastonia Wildlife Removal Pros",
             "image": "/1.jpeg",
-            "@id": "https://raccooncontrolsouthwestranches.vercel.app/",
-            "url": "https://raccooncontrolsouthwestranches.vercel.app/",
+            "@id": "https://wildliferemovalgastonianc.vercel.app/",
+            "url": "https://wildliferemovalgastonianc.vercel.app/",
             "telephone": "+13238801224",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "N Flamingo Rd",
-              "addressLocality": "Southwest Ranches",
-              "addressRegion": "FL",
-              "postalCode": "33330",
+              "streetAddress": "Main St",
+              "addressLocality": "Gastonia",
+              "addressRegion": "NC",
+              "postalCode": "28052",
               "addressCountry": "US"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": "26.0465",
-              "longitude": "-80.3662"
+              "latitude": "35.2621",
+              "longitude": "-81.1873"
             },
             "openingHoursSpecification": {
               "@type": "OpeningHoursSpecification",
@@ -54,32 +54,32 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "serviceType": "Wildlife Control & Raccoon Removal",
+            "serviceType": "Wildlife Removal & Animal Control",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Southwest Ranches Raccoon Pros"
+              "name": "Gastonia Wildlife Removal Pros"
             },
             "areaServed": {
               "@type": "City",
-              "name": "Southwest Ranches, FL"
+              "name": "Gastonia, NC"
             },
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
-              "name": "Raccoon Removal Services",
+              "name": "Wildlife Control Services",
               "itemListElement": [
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Raccoon Trapping" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wildlife Exclusion" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Attic Decontamination" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Damage Repair" } }
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Raccoon Removal" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Squirrel Exclusion" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Attic Restoration" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dead Animal Removal" } }
               ]
             }
           })}
         </script>
 
-        <meta property="og:title" content="Raccoon control Southwest Ranches | Southwest Ranches Raccoon Pros" />
-        <meta property="og:description" content="Expert raccoon removal services in Southwest Ranches, FL. Protect your home and family with professional trapping and humane exclusion." />
+        <meta property="og:title" content="wildlife removal gastonia nc | Gastonia Wildlife Removal Pros" />
+        <meta property="og:description" content="Expert wildlife removal services in Gastonia, NC. Protect your home and family with professional trapping and humane exclusion." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://raccooncontrolsouthwestranches.vercel.app/" />
+        <meta property="og:url" content="https://wildliferemovalgastonianc.vercel.app/" />
         <meta property="og:image" content="/1.jpeg" />
       </Helmet>
 
@@ -88,19 +88,19 @@ const Index = () => {
         <Hero
           title={
             <>
-              Raccoon <br />
-              <span className="text-white drop-shadow-sm uppercase">Control in Southwest Ranches</span>
+              Wildlife <br />
+              <span className="text-white drop-shadow-sm uppercase">Removal in Gastonia NC</span>
             </>
           }
-          subtitle="Southwest Ranches' premier specialists in professional raccoon control. We provide advanced trapping, humane exclusion techniques, and comprehensive property protection to keep your home wildlife-free. Dedicated to Southwest Ranches' safety and peace of mind. Available 24/7."
+          subtitle="Gastonia's premier specialists in professional wildlife removal. We provide advanced trapping, humane exclusion techniques, and comprehensive property protection to keep your home animal-free. Dedicated to Gastonia's safety and peace of mind. Available 24/7."
           image="/1.jpeg"
           overlayImage="/2.jpeg"
-          badge="SOUTHWEST RANCHES RACCOON PROS"
+          badge="GASTONIA WILDLIFE REMOVAL PROS"
           phone="3238801224"
         />
         <Services />
         <WhyUs />
-        <RaccoonControlInfo />
+        <WildlifeRemovalInfo />
         <Contact />
         <FAQ />
 

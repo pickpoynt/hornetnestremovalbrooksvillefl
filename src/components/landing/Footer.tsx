@@ -14,12 +14,12 @@ const Footer = () => {
                 <ShieldCheck className="w-7 h-7 text-white" />
               </div>
               <div>
-                <span className="font-heading font-bold text-xl block leading-none tracking-tight text-white uppercase text-[15px]">Southwest Ranches</span>
-                <span className="text-sm font-medium text-indigo-500 uppercase tracking-widest text-[10px]">Raccoon Pros</span>
+                <span className="font-heading font-bold text-xl block leading-none tracking-tight text-white uppercase text-[15px]">Gastonia NC</span>
+                <span className="text-sm font-medium text-indigo-500 uppercase tracking-widest text-[10px]">Wildlife Pros</span>
               </div>
             </div>
             <p className="text-slate-400 mb-8 leading-relaxed font-medium italic text-sm">
-              Southwest Ranches' specialized team for professional raccoon removal and property protection. We provide elite-grade wildlife control to reclaim your home's safety.
+              Gastonia's specialized team for professional wildlife removal and property protection. We provide elite-grade animal control to reclaim your home's safety.
             </p>
             <div className="flex gap-4">
               {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
@@ -31,10 +31,10 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-bold mb-8 uppercase tracking-widest text-indigo-400">Raccoon Services</h4>
+            <h4 className="text-lg font-bold mb-8 uppercase tracking-widest text-indigo-400">Wildlife Services</h4>
             <ul className="space-y-4">
               {[
-                "Raccoon Trapping",
+                "Wildlife Trapping",
                 "Humane Exclusion",
                 "Attic Cleanup",
                 "Damage Restoration",
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-bold mb-8 uppercase tracking-widest text-indigo-400">Southwest Ranches NAP</h4>
+            <h4 className="text-lg font-bold mb-8 uppercase tracking-widest text-indigo-400">Gastonia NAP</h4>
             <ul className="space-y-6">
               <li className="flex gap-4">
                 <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
@@ -60,8 +60,8 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">HQ</p>
-                  <p className="text-sm font-bold text-slate-300 uppercase tracking-tight leading-tight">N Flamingo Rd</p>
-                  <p className="text-sm font-bold text-slate-300 uppercase tracking-tight">Southwest Ranches, FL 33330</p>
+                  <p className="text-sm font-bold text-slate-300 uppercase tracking-tight leading-tight">Main St</p>
+                  <p className="text-sm font-bold text-slate-300 uppercase tracking-tight">Gastonia, NC 28052</p>
                 </div>
               </li>
               <li className="flex gap-4">
@@ -79,7 +79,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Support</p>
-                  <a href="/lease" className="text-sm font-bold text-slate-300 hover:text-indigo-400 transition-colors uppercase tracking-tight">Lease My Number</a>
+                  <a href="/lease" className="text-sm font-bold text-slate-300 hover:text-indigo-400 transition-colors uppercase tracking-tight text-nowrap">LEASE MY NUMBER</a>
                 </div>
               </li>
             </ul>
@@ -88,18 +88,18 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-8 uppercase tracking-widest text-indigo-400">Standard Excellence</h4>
             <p className="text-slate-400 text-sm leading-relaxed mb-6 italic font-medium">
-              We specialize in the unique raccoon control requirements of Southwest Ranches FL homes, using precision methods and professional-grade exclusion materials.
+              We specialize in the unique wildlife control requirements of Gastonia NC homes, using precision methods and professional-grade exclusion materials.
             </p>
             <div className="p-6 bg-white/5 rounded-2xl border border-white/10">
               <p className="text-[10px] font-bold text-indigo-400 uppercase tracking-[0.2em] mb-2">Service Promise</p>
-              <p className="text-sm font-bold text-slate-300 uppercase leading-tight italic">Expert Raccoon Assessments Available Across Southwest Ranches.</p>
+              <p className="text-sm font-bold text-slate-300 uppercase leading-tight italic">Expert Wildlife Assessments Available Across Gastonia.</p>
             </div>
           </div>
         </div>
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 uppercase tracking-widest text-[10px] font-bold">
           <p className="text-slate-500 text-center md:text-left">
-            © {new Date().getFullYear()} Southwest Ranches Raccoon Pros. All rights reserved. Professional Wildlife Control & safety.
+            © {new Date().getFullYear()} Gastonia Wildlife Removal Pros. All rights reserved. Professional Wildlife Control & safety.
           </p>
 
           <div className="flex gap-8 items-center">
