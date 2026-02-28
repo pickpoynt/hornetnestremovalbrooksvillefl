@@ -1,128 +1,144 @@
-import { ChevronDown, ChevronUp } from "lucide-react";
-import { useState } from "react";
+import { HelpCircle, Search, ShieldCheck, Zap, Droplets, Clock, Hammer, Award, Info, CheckCircle, AlertCircle, TrendingUp, DollarSign, Home, Waves, Activity, Tool, FileText, Warning, Scissors } from "lucide-react";
 
 const faqs = [
   {
-    question: "What do local plumbers charge per hour?",
-    answer: "In the Montello area, professional plumbers typically charge between $75 and $150 per hour. Rates can vary based on the complexity of the job and whether it's an emergency call."
+    icon: HelpCircle,
+    question: "What exactly is trenchless sewer repair?",
+    answer: "Trenchless sewer repair is a 'no-dig' method of restoring or replacing damaged sewer lines. Instead of digging a massive trench through your Scottsdale landscaping, we use small access points to insert a new liner or pull a new pipe through the old one."
   },
   {
-    question: "How much does a plumber charge per hour in Wisconsin?",
-    answer: "Across Wisconsin, the average hourly rate for a licensed plumber is approximately $110. In smaller communities like Montello, you might find slightly lower rates compared to Milwaukee or Madison."
+    icon: Search,
+    question: "How does CIPP lining work?",
+    answer: "Cured-In-Place Pipe (CIPP) lining involves saturating a felt tube with epoxy resin, pulling it into the damaged pipe, and inflating it. Once the resin cures, it creates a jointless, 'pipe-within-a-pipe' that is as strong as new PVC."
   },
   {
-    question: "Can plumbers make $100 an hour?",
-    answer: "Yes, experienced master plumbers or those running their own specialized service companies in Wisconsin often charge $100 to $200 per hour to cover equipment, insurance, and expertise."
+    icon: Hammer,
+    question: "Is pipe bursting better than lining?",
+    answer: "Pipe bursting is preferred when the original pipe is collapsed or needs to be upsized. We pull a new HDPE pipe through the old one, 'bursting' the old pipe outward. Lining is better for pipes that are still structurally intact but have leaks or roots."
   },
   {
-    question: "Do plumbers give a free estimate?",
-    answer: "Many local plumbers in Marquette County provide free over-the-phone estimates. However, for complex issues that require an on-site diagnostic, a service call fee is common."
+    icon: Clock,
+    question: "How long does a trenchless repair last?",
+    answer: "Most trenchless materials, especially HDPE and epoxy resins, are rated for a 50-year lifespan. Some studies suggest they can last up to 100 years, as they are immune to the corrosion that kills cast iron."
   },
   {
-    question: "Is it cheaper to DIY or hire a plumber?",
-    answer: "While DIY saves on labor, mistakes in plumbing can lead to thousands of dollars in water damage. Hiring a professional in Montello ensures the job is done to Wisconsin code."
+    icon: Home,
+    question: "Will it damage my Scottsdale landscaping?",
+    answer: "No! This is the primary benefit. We can save your expensive desert hardscaping, pavers, and pool decks in Scottsdale. We typically only need one or two small access pits."
   },
   {
-    question: "Are you supposed to tip a plumber?",
-    answer: "Tipping is not required or expected in the plumbing trade. However, if a technician goes above and beyond—especially during a late-night emergency—a small tip or a positive online review is always appreciated."
+    icon: Activity,
+    question: "Can trenchless fix root intrusion?",
+    answer: "Yes. By creating a seamless, jointless pipe, we eliminate the gaps where Scottsdale's desert vegetation roots typically enter the system. Roots cannot penetrate the new epoxy or HDPE barrier."
   },
   {
-    question: "How to negotiate a plumber's rate?",
-    answer: "The best way to negotiate is to get multiple quotes, bundle several small repairs into one visit, or ask if there are discounts for seniors or veterans in the Marquette County area."
+    icon: DollarSign,
+    question: "Is it cheaper than traditional digging?",
+    answer: "While the technology itself can be more expensive, you save thousands by NOT having to replace your driveway, landscaping, or interior flooring after the repair is done."
   },
   {
-    question: "What's the most expensive part of a bathroom remodel?",
-    answer: "Relocating existing plumbing (like moving a toilet or shower drain) is usually the most labor-intensive and expensive part of a bathroom renovation."
+    icon: Zap,
+    question: "How long does the process take?",
+    answer: "Most Scottsdale residential trenchless projects are completed in a single day. Traditional excavation can take up to a week and leave your property in disarray."
   },
   {
-    question: "Is $28 an hour good in Wisconsin?",
-    answer: "$28 per hour is a solid wage for a plumbing apprentice or journeyman in Wisconsin, translating to about $58,000 a year before overtime."
+    icon: ShieldCheck,
+    question: "Is trenchless repair safe for old pipes?",
+    answer: "Absolutely. It's often the ONLY safe way to repair old, brittle clay or cast iron pipes without causing them to shatter completely during excavation."
   },
   {
-    question: "How not to get ripped off by a plumber?",
-    answer: "Always check for a valid Wisconsin plumbing license, ask for a written estimate before work begins, and avoid any contractor who demands full payment upfront."
+    icon: AlertCircle,
+    question: "What are the signs I need sewer repair?",
+    answer: "Look for frequent backups, slow drains, gurgling noises from toilets, or unusually lush green patches in your Scottsdale yard (which indicates a leak)."
   },
   {
-    question: "What is the 135 rule in plumbing?",
-    answer: "The 135 rule often refers to the slope of horizontal drainage pipes (1/4 inch per foot). Maintaining this '1% to 3%' grade is critical for preventing clogs and ensuring proper flow."
+    icon: Tool,
+    question: "Does trenchless work for cast iron pipes?",
+    answer: "Yes. Cast iron often suffers from 'channeling' or scale buildup. We clean the pipe via hydro-jetting and then line it to create a smooth, permanent interior."
   },
   {
-    question: "Is it okay to negotiate plumber costs?",
-    answer: "Yes, especially for large projects. While hourly rates for repairs are usually firm, you can often negotiate a 'flat rate' for major installations like whole-home repiping."
+    icon: AlertCircle,
+    question: "Can it fix a collapsed sewer line?",
+    answer: "If the line is fully collapsed, pipe bursting is the solution. If it's only partially collapsed or cracked, CIPP lining can often bridge the gap."
   },
   {
-    question: "How to tell if your plumber is overcharging you?",
-    answer: "If the quote is significantly higher than 2-3 other local Montello estimates, or if they are charging for 'essential items' that weren't discussed, they may be overcharging."
+    icon: Award,
+    question: "What is the warranty on trenchless?",
+    answer: "Scottsdale Trenchless Pros offers a lifetime warranty on the structural integrity of our liners and a 10-year warranty on the installation workmanship."
   },
   {
-    question: "What is a normal call-out charge for a plumber?",
-    answer: "A typical call-out fee in central Wisconsin ranges from $49 to $99. This usually covers the travel and initial 15-30 minutes of diagnostic time."
+    icon: Waves,
+    question: "Is hydro-jetting required first?",
+    answer: "Yes. We must remove all debris, grease, and scale to ensure the new liner bonds perfectly to the host pipe. It's included in our standard Scottsdale service package."
   },
   {
-    question: "What are common hidden plumbing costs?",
-    answer: "Hidden costs often include permit fees, wall/ceiling repair after a pipe fix, or disposal fees for old water heaters and fixtures."
+    icon: TrendingUp,
+    question: "Will it increase my home value?",
+    answer: "Yes. Having a certified 'restored' sewer line with a 50-year lifespan is a major selling point in the Scottsdale real estate market, often documented in home inspections."
   },
   {
-    question: "How much is $70,000 a year per hour?",
-    answer: "$70,000 a year is roughly $33.65 per hour based on a standard 40-hour work week. Many experienced Montello plumbers earn in this range."
+    icon: Search,
+    question: "How do I know if I'm a candidate?",
+    answer: "We start with a high-definition camera inspection. This allows us to see the exact condition of your Scottsdale pipes and recommend the best trenchless method."
   },
   {
-    question: "What jobs pay $400 an hour?",
-    answer: "In the plumbing world, specialized emergency services or high-end commercial consulting can reach these figures, though they are not the standard for residential repairs."
+    icon: Droplets,
+    question: "Does it work under pool decks?",
+    answer: "Yes! Scottsdale homes often have sewer lines running right under pool areas. Trenchless allows us to fix these lines without ever touching your pool deck."
   },
   {
-    question: "What trade makes $100,000 a year?",
-    answer: "Plumbing, Electricians, and HVAC technicians in Wisconsin can all reach $100,000+ annually through a combination of master-level expertise, overtime, and business ownership."
+    icon: Info,
+    question: "What kind of resin is used?",
+    answer: "We use industrial-grade, 100% solids epoxy resins. These are non-toxic once cured and are designed specifically for long-term underground hydraulic environments."
   },
   {
-    question: "How long should a water heater last in Wisconsin?",
-    answer: "In the Montello area, a standard tank water heater typically lasts 8 to 12 years. Regular flushing to remove mineral sediment can extend this lifespan."
+    icon: Scissors,
+    question: "Is the new pipe smaller?",
+    answer: "The liner reduces the diameter by only a few millimeters (about 5%). However, because the surface is now perfectly smooth, the flow capacity actually increases."
   },
   {
-    question: "What is the most common plumbing emergency in Montello?",
-    answer: "During winter, frozen and burst pipes are the #1 emergency. In summer, we see many issues with outdoor spigots and septic backup after heavy rain."
+    icon: FileText,
+    question: "Does it require a permit in Scottsdale?",
+    answer: "Yes, Scottsdale and Maricopa County require permits for sewer work. We handle all the permitting and inspections as part of our full-service offering."
   },
   {
-    question: "Can I use chemical drain cleaners in older pipes?",
-    answer: "We strongly advise against it for older Montello homes. Harsh chemicals can corrode galvanized or cast-iron pipes, leading to much more expensive leaks."
+    icon: CheckCircle,
+    question: "Why choose Scottsdale Trenchless Pros?",
+    answer: "We are the local specialists in no-dig technology. We don't just do general plumbing; we focus exclusively on trenchless restoration for Scottsdale properties."
   }
 ];
 
-const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+import { LucideIcon } from "lucide-react";
 
+const FAQCard = ({ icon: Icon, question, answer }: { icon: LucideIcon, question: string, answer: string }) => (
+  <div className="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-xl shadow-slate-200/50 hover:border-indigo-200 transition-all group h-full">
+    <div className="w-12 h-12 rounded-2xl bg-slate-50 flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+      <Icon className="w-6 h-6" />
+    </div>
+    <h3 className="text-xl font-bold text-slate-900 mb-4 uppercase tracking-tight leading-tight">{question}</h3>
+    <p className="text-slate-500 leading-relaxed text-sm font-medium italic">{answer}</p>
+  </div>
+);
+
+const FAQ = () => {
   return (
-    <section id="faq" className="py-24 bg-white relative overflow-hidden">
+    <section id="faq" className="py-24 bg-slate-50 relative overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-100 text-indigo-600 text-xs font-bold uppercase tracking-widest mb-4">
+            Expert Knowledge Base
+          </div>
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6 uppercase tracking-tight">
-            Plumbing <span className="text-indigo-600">Expert Knowledge Base</span>
+            Learn About <span className="text-indigo-600">Trenchless Technology</span>
           </h2>
           <p className="text-slate-600 text-lg leading-relaxed font-medium italic">
-            Essential information about plumbing costs, local regulations, and maintenance standards for homeowners in Montello, Wisconsin.
+            Everything you need to know about no-dig sewer repair in Scottsdale. Have more questions? Call our experts at (877) 792-1410.
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto space-y-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {faqs.map((faq, index) => (
-            <div key={index} className="rounded-2xl border border-slate-100 bg-slate-50 overflow-hidden transition-all duration-300">
-              <button
-                className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-white transition-colors"
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-              >
-                <span className="font-bold text-slate-900 uppercase tracking-tight text-sm">{faq.question}</span>
-                {openIndex === index ? (
-                  <ChevronUp className="w-5 h-5 text-indigo-600" />
-                ) : (
-                  <ChevronDown className="w-5 h-5 text-slate-400" />
-                )}
-              </button>
-              {openIndex === index && (
-                <div className="px-8 pb-6 bg-white">
-                  <p className="text-slate-600 text-base leading-relaxed border-t border-slate-50 pt-4">{faq.answer}</p>
-                </div>
-              )}
-            </div>
+            <FAQCard key={index} {...faq} />
           ))}
         </div>
       </div>

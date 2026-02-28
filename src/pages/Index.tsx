@@ -2,7 +2,7 @@ import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import Services from "@/components/landing/Services";
 import WhyUs from "@/components/landing/WhyUs";
-import PlumbingInfo from "@/components/landing/PlumbingInfo";
+import TrenchlessInfo from "@/components/landing/TrenchlessInfo";
 import Contact from "@/components/landing/Contact";
 import FAQ from "@/components/landing/FAQ";
 import Footer from "@/components/landing/Footer";
@@ -15,32 +15,32 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-slate-50">
       <Helmet>
-        <title>plumber montello wi | Montello Plumbing Pros</title>
-        <meta name="description" content="Professional plumber montello wi. Expert plumbing repairs, drain cleaning, and water heater services. Call 8777921410 for a free estimate in Montello, WI." />
-        <meta name="keywords" content="plumber montello wi, Montello plumbing, emergency plumber Montello WI, drain cleaning Montello, water heater repair Montello" />
-        <link rel="canonical" href="https://plumbermontellowi.vercel.app/" />
+        <title>trenchless sewer repair scottsdale az | Scottsdale Trenchless Sewer Repair Pros</title>
+        <meta name="description" content="Professional trenchless sewer repair scottsdale az. Expert pipe lining, sewer replacement, and drain repair. Call (877) 792-1410 for a free estimate in Scottsdale, AZ." />
+        <meta name="keywords" content="trenchless sewer repair scottsdale az, Scottsdale pipe lining, sewer repair Scottsdale, no-dig sewer repair Scottsdale, pipe bursting Arizona" />
+        <link rel="canonical" href="https://trenchlesssewerrepairscottsdaleaz.vercel.app/" />
 
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "Montello Plumbing Pros",
-            "image": "/3.jpeg",
-            "@id": "https://plumbermontellowi.vercel.app/",
-            "url": "https://plumbermontellowi.vercel.app/",
+            "name": "Scottsdale Trenchless Sewer Repair Pros",
+            "image": "/4.jpeg",
+            "@id": "https://trenchlesssewerrepairscottsdaleaz.vercel.app/",
+            "url": "https://trenchlesssewerrepairscottsdaleaz.vercel.app/",
             "telephone": "+18777921410",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "100 Church St",
-              "addressLocality": "Montello",
-              "addressRegion": "WI",
-              "postalCode": "53949",
+              "streetAddress": "7014 E Camelback Rd",
+              "addressLocality": "Scottsdale",
+              "addressRegion": "AZ",
+              "postalCode": "85251",
               "addressCountry": "US"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": "43.7919",
-              "longitude": "-89.3297"
+              "latitude": "33.4942",
+              "longitude": "-111.9261"
             },
             "openingHoursSpecification": {
               "@type": "OpeningHoursSpecification",
@@ -55,33 +55,33 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "serviceType": "Plumbing Services",
+            "serviceType": "Trenchless Sewer Repair",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Montello Plumbing Pros"
+              "name": "Scottsdale Trenchless Sewer Repair Pros"
             },
             "areaServed": {
               "@type": "City",
-              "name": "Montello, WI"
+              "name": "Scottsdale, AZ"
             },
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
-              "name": "Plumbing Services",
+              "name": "Trenchless Sewer Services",
               "itemListElement": [
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency Repairs" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drain Cleaning" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Water Heater Installation" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Frozen Pipe Repair" } }
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CIPP Pipe Lining" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pipe Bursting" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sewer Camera Inspection" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hydro Jetting" } }
               ]
             }
           })}
         </script>
 
-        <meta property="og:title" content="plumber montello wi | Montello Plumbing Pros" />
-        <meta property="og:description" content="Expert plumbing services in Montello, WI. Professional repairs, drain cleaning, and water heater services for Marquette County homes. Call 8777921410!" />
+        <meta property="og:title" content="trenchless sewer repair scottsdale az | Scottsdale Trenchless Sewer Repair Pros" />
+        <meta property="og:description" content="Expert trenchless sewer repair in Scottsdale, AZ. Professional pipe lining and no-dig solutions for Scottsdale homes. Call (877) 792-1410!" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://plumbermontellowi.vercel.app/" />
-        <meta property="og:image" content="/3.jpeg" />
+        <meta property="og:url" content="https://trenchlesssewerrepairscottsdaleaz.vercel.app/" />
+        <meta property="og:image" content="/4.jpeg" />
       </Helmet>
 
       <Header />
@@ -89,35 +89,35 @@ const Index = () => {
         <Hero
           title={
             <>
-              PLUMBER <br />
-              <span className="text-white drop-shadow-sm uppercase">in MONTELLO WI</span>
+              TRENCHLESS SEWER REPAIR <br />
+              <span className="text-white drop-shadow-sm uppercase">in SCOTTSDALE AZ</span>
             </>
           }
-          subtitle="Montello's designated specialists in professional plumbing and emergency repairs. From the banks of the Fox River to the historic granite quarry town, we protect your property from leaks, blockages, and winter freeze damage with expert precision."
+          subtitle="Scottsdale's designated specialists in professional no-dig sewer repair and pipe lining. From the luxury estates of Paradise Valley to the desert landscapes of North Scottsdale, we protect your landscaping with advanced trenchless technology."
           image="/3.jpeg"
           overlayImage="/4.jpeg"
-          badge="MONTELLO PLUMBING PROS"
-          phone="8777921410"
+          badge="SCOTTSDALE TRENCHLESS PROS"
+          phone="(877) 792-1410"
           features={[
-            { icon: ShieldCheck, text: "Licensed & Insured" },
-            { icon: Zap, text: "Rapid Response" },
-            { icon: Droplets, text: "Advanced Leak Detection" }
+            { icon: ShieldCheck, text: "No-Dig Technology" },
+            { icon: Zap, text: "Rapid Pipe Restoration" },
+            { icon: Droplets, text: "High-Def Camera Exams" }
           ]}
         />
         <Services />
         <WhyUs />
-        <PlumbingInfo />
+        <TrenchlessInfo />
         <Contact />
         <FAQ />
 
         <section className="bg-white py-12 border-t text-center">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl font-bold mb-6 text-slate-800 uppercase tracking-tight">Our Local Resource Network</h2>
+            <h2 className="text-2xl font-bold mb-6 text-slate-800 uppercase tracking-tight">Our Professional Resource Network</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-8">
-              <a href="https://leakingpiperepairinmodesto.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline">Leaking Pipe Repair Modesto</a>
-              <a href="https://wildliferemovalgastonianc.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline">Wildlife Removal Gastonia NC</a>
-              <a href="https://toxicblackmoldcleanupgulfbreeze.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline">Toxic Black Mold Cleanup Gulf Breeze</a>
               <a href="https://pestcontrolbatonrouge.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline">Pest Control Baton Rouge</a>
+              <a href="https://plumbermontellowi.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline">Plumber Montello WI</a>
+              <a href="https://wildliferemovaldouglasvillega.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline">Wildlife Removal Douglasville GA</a>
+              <a href="https://toxicblackmoldcleanupgulfbreeze.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline">Toxic Black Mold Cleanup Gulf Breeze</a>
             </div>
           </div>
         </section>
