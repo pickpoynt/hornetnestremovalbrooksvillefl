@@ -1,35 +1,35 @@
-import { ShieldCheck, Drill, Search, Clock, Zap, Hammer, Flame, Home, Shield, Activity, Target, Waves } from "lucide-react";
+import { ShieldCheck, Drill, Search, Clock, Zap, Hammer, Bug, Home, Shield, Activity, Target, Waves } from "lucide-react";
 
 const services = [
   {
-    icon: Flame,
-    title: "Water Heater Repair",
-    description: "Our Beaverton specialists diagnose and repair all water heater issues — from pilot light failures and thermostat malfunctions to sediment buildup and pressure relief valve problems."
+    icon: Search,
+    title: "Cast Iron Pipe Inspection",
+    description: "Our Boonton specialists provide professional sewer camera inspections to identify cracks, corrosion, and root intrusion in your Morrison County property's integrity."
   },
   {
-    icon: Search,
-    title: "Diagnostic Inspection",
-    description: "We deploy advanced inspection techniques to identify the root cause of your water heater problem quickly, saving you time and money in Beaverton, OR."
+    icon: Drill,
+    title: "Sewer Line Replacement",
+    description: "We deploy advanced excavation and trenchless techniques to replace failing cast iron sewer lines in your Boonton home permanently."
   },
   {
     icon: Waves,
-    title: "Tankless Water Heater Service",
-    description: "Tankless systems require specialized expertise. We service, descale, and repair all major tankless water heater brands across the Beaverton and Washington County area."
+    title: "Whole House Repiping",
+    description: "Cast iron drains require expert attention. We offer comprehensive repiping across the Boonton area to eliminate backups and protect your home."
   },
   {
     icon: Shield,
-    title: "Water Heater Replacement",
-    description: "When repair isn't cost-effective, we provide fast, professional water heater replacement with same-day installation available throughout Beaverton."
+    title: "Old Pipe Upgrades",
+    description: "Long-term solutions allow us to replace brittle cast iron with modern PVC or HDPE without ever compromising the safety of your living space."
   },
   {
     icon: Target,
-    title: "Annual Maintenance",
-    description: "Extend your water heater's lifespan with our professional annual flush, anode rod inspection, and full system tune-up — the Beaverton homeowner's best investment."
+    title: "Copper/PEX Transitions",
+    description: "Professional-grade water line transitions remove scale and prevent leaks, prepping your home for a leak-free environment in the heart of Boonton."
   },
   {
     icon: Activity,
-    title: "Emergency Hot Water Repair",
-    description: "No hot water is a household emergency. Our Beaverton team offers rapid-response emergency water heater repair 24/7 across Washington County."
+    title: "Leak Diagnostics",
+    description: "Minimize risk with our specialized residential-grade leak detection solutions for Boonton homes and basements."
   }
 ];
 
@@ -39,10 +39,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6 uppercase tracking-tight">
-            Expert <span className="text-indigo-600 border-b-4 border-indigo-600/20">water heater repair beaverton</span>
+            Expert <span className="text-indigo-600 border-b-4 border-indigo-600/20">cast iron pipe replacement boonton</span>
           </h2>
           <p className="text-lg text-slate-600 font-medium italic">
-            Specialized water heater repair and replacement solutions designed for Beaverton's hard water conditions. We protect your Oregon home's comfort.
+            Specialized pipe removal and replacement solutions designed for Boonton's unique residential architecture. We protect your New Jersey home.
           </p>
         </div>
 

@@ -2,94 +2,119 @@ import { HelpCircle, Search, ShieldCheck, Zap, Droplets, Clock, Hammer, Award, I
 
 const faqs = [
   {
-    icon: DollarSign,
-    question: "How much should it cost to have a water heater replaced?",
-    answer: "Water heater replacement in Beaverton typically costs $800–$2,500 installed, depending on the unit type. Tank water heaters are cheaper upfront; tankless units cost more but last longer and save on energy bills."
-  },
-  {
     icon: HelpCircle,
-    question: "Is it worth it to repair a hot water heater?",
-    answer: "If the unit is under 10 years old, repair is usually worth it. For units older than that, replacement is often more cost-effective — especially in Beaverton where hard water accelerates wear."
-  },
-  {
-    icon: AlertCircle,
-    question: "What is the most common problem with a hot water heater?",
-    answer: "The most common issues are sediment buildup from hard water, a failed heating element, a faulty thermostat, or a worn-out anode rod — all of which our Beaverton team repairs daily."
-  },
-  {
-    icon: Award,
-    question: "Who offers the best water heater repair?",
-    answer: "Beaverton Water Heater Repair Pros offers certified, licensed, and insured service with same-day availability, transparent pricing, and a 100% satisfaction guarantee across Washington County."
-  },
-  {
-    icon: Home,
-    question: "How much does Home Depot charge to replace a water heater?",
-    answer: "Home Depot's installation fees typically range from $300–$600 on top of the unit cost. However, their scheduling is often slow. Our Beaverton team offers competitive pricing with faster same-day service."
-  },
-  {
-    icon: Clock,
-    question: "What is the life expectancy of a water heater?",
-    answer: "Traditional tank water heaters last 8–12 years; tankless units last 15–20 years. Beaverton's hard water can shorten tank lifespan if annual flushing and anode rod maintenance are neglected."
-  },
-  {
-    icon: Activity,
-    question: "What are the first signs of a water heater going bad?",
-    answer: "Warning signs include rumbling noises, rust-colored water, inconsistent hot water, water pooling around the base, and unusually high energy bills — call us in Beaverton before it becomes an emergency."
-  },
-  {
-    icon: DollarSign,
-    question: "What is the average labor cost to install a 50 gallon gas water heater?",
-    answer: "Labor for a 50-gallon gas water heater installation in the Beaverton area typically runs $200–$500, depending on complexity, access, and whether gas line modifications are needed."
+    question: "How much does it cost to replace cast iron pipes?",
+    answer: "Costs typically range from $15,000 to $30,000 for a whole-house replacement, depending on home size and access in Boonton."
   },
   {
     icon: ShieldCheck,
-    question: "Will homeowners insurance cover a broken water heater?",
-    answer: "Usually not for wear-and-tear failure, but if your water heater causes sudden water damage due to a burst, your homeowners policy may cover the resulting damage. Always check with your insurer."
-  },
-  {
-    icon: Waves,
-    question: "What happens if you never flush your water heater?",
-    answer: "Skipping annual flushes allows sediment to harden at the tank bottom, reducing efficiency, increasing energy costs, and eventually causing premature tank failure — a very common issue in Beaverton's hard water zones."
-  },
-  {
-    icon: Target,
-    question: "What brand of water heater lasts the longest?",
-    answer: "Brands like Rheem, AO Smith, and Navien consistently rank highest for longevity. Our Beaverton technicians work with all major brands and can recommend the best fit for your OR home's water quality."
-  },
-  {
-    icon: Wrench,
-    question: "Can I repair a water heater myself?",
-    answer: "Minor fixes like relighting a pilot light are DIY-safe, but replacing elements, thermostats, or gas components requires a licensed plumber in Oregon. Incorrect repairs can void warranties and create safety hazards."
+    question: "Does homeowners insurance cover replacing cast iron pipes?",
+    answer: "Generally, no. Insurance covers sudden water damage but rarely the cost of replacing old, worn-out cast iron pipes themselves."
   },
   {
     icon: DollarSign,
-    question: "What does a plumber charge to replace a hot water heater?",
-    answer: "Plumber labor for water heater replacement in the Beaverton area typically ranges from $150–$450. Our Beaverton Water Heater Repair Pros offer competitive all-in pricing with no hidden fees."
-  },
-  {
-    icon: FileText,
-    question: "Are there tax credits for new water heaters?",
-    answer: "Yes! ENERGY STAR-certified heat pump water heaters and certain tankless models qualify for federal tax credits of up to 30% (capped at $600). Ask our Beaverton team for qualifying units."
-  },
-  {
-    icon: TrendingUp,
-    question: "What is the average price for a 50 gallon hot water heater?",
-    answer: "A 50-gallon tank water heater in 2024 costs $500–$1,200 for the unit itself. Total installed cost in Beaverton with labor runs $900–$1,800 depending on the brand and site conditions."
-  },
-  {
-    icon: Home,
-    question: "How much does Lowe's charge to put in a hot water tank?",
-    answer: "Lowe's installation packages typically cost $199–$399 on top of the unit price. Their lead times can be 1–2 weeks. Our Beaverton pros offer same-day or next-day service at comparable prices."
+    question: "How much will a plumber charge to replace a pipe?",
+    answer: "Boonton plumbers usually charge between $150 and $400 per linear foot for cast iron replacement, depending on the pipe's location and depth."
   },
   {
     icon: Info,
-    question: "What is the common reason for a water heater not working?",
-    answer: "The most frequent culprits are a tripped circuit breaker, a failed heating element, a faulty thermostat, or a clogged burner on gas units. Our Beaverton team diagnoses these in under an hour."
+    question: "Can you still get cast iron pipes?",
+    answer: "Yes, cast iron is still used in high-end projects and commercial buildings for its quiet operation, but PVC and PEX are standard for modern residential replacements."
+  },
+  {
+    icon: FileText,
+    question: "Can you sell a house with cast iron pipes?",
+    answer: "Yes, but many Boonton buyers will request a sewer scope, and aging pipes can often complicate financing or property insurance."
+  },
+  {
+    icon: Clock,
+    question: "What is the life expectancy of cast iron pipes?",
+    answer: "Cast iron pipes are generally rated for a 50 to 75-year lifespan. Most Boonton homes built before 1970 are now at high risk of failure."
+  },
+  {
+    icon: AlertCircle,
+    question: "Why do insurance companies not like cast iron plumbing?",
+    answer: "Insurers view cast iron as a high-risk liability due to frequent leaks, collapses, and expensive water damage claims in older NJ homes."
+  },
+  {
+    icon: Hammer,
+    question: "Should I replace old cast iron pipes?",
+    answer: "If you experience frequent backups, slow drains, or sewer smells, it is highly recommended to replace them before a major collapse occurs."
+  },
+  {
+    icon: TrendingUp,
+    question: "Is it cheaper to replace or repair pipes?",
+    answer: "Repairs are cheaper upfront, but repeated fixes for failing cast iron quickly exceed the cost of a one-time permanent replacement."
   },
   {
     icon: Home,
-    question: "How much does Home Depot charge to change out a water heater?",
-    answer: "Home Depot's total cost to swap a water heater averages $1,200–$2,500 installed, including the unit. Scheduling is slower and customer service is inconsistent compared to a dedicated local Beaverton specialist."
+    question: "How much does it cost to repipe a 2500 square foot house?",
+    answer: "In Boonton, a full repipe for a 2,500 sq ft home typically ranges from $12,000 to $25,000 depending on the number of fixtures and floor plan."
+  },
+  {
+    icon: ShieldCheck,
+    question: "Do most homeowners insurance cover broken water pipes?",
+    answer: "They usually cover the damage caused by the break, but not the repair or replacement of the pipe itself unless you have a specific rider."
+  },
+  {
+    icon: Clock,
+    question: "What year did plumbers stop using cast iron pipes?",
+    answer: "Residential use of cast iron mostly ended in the mid-1970s as PVC became the industry standard for Boonton area construction."
+  },
+  {
+    icon: AlertCircle,
+    question: "What is the most expensive plumbing issue?",
+    answer: "A main sewer line collapse under a slab foundation is consistently ranked as one of the most expensive and invasive repairs."
+  },
+  {
+    icon: Clock,
+    question: "How long does it take to replace cast iron pipes?",
+    answer: "A full house repipe typically takes 3 to 7 days, depending on the complexity and size of your Boonton property."
+  },
+  {
+    icon: ShieldCheck,
+    question: "Will homeowners insurance cover cast iron pipe replacement?",
+    answer: "Unless the failure was sudden and accidental (and not due to age), most standard policies will not pay for the replacement."
+  },
+  {
+    icon: Search,
+    question: "How to tell if cast iron pipe needs to be replaced?",
+    answer: "Signs include persistent slow drains, sewage odors, rust spots on exposed pipes, frequent backups, and lush patches in the yard."
+  },
+  {
+    icon: Droplets,
+    question: "What is the healthiest pipe for drinking water?",
+    answer: "Copper and PEX are currently considered the best options for modern residential water delivery in New Jersey."
+  },
+  {
+    icon: TrendingUp,
+    question: "What decreases property value the most?",
+    answer: "Major structural issues and outdated infrastructure, including failing cast iron plumbing, can significantly decrease a property's market value."
+  },
+  {
+    icon: Hammer,
+    question: "What not to fix before selling your house?",
+    answer: "Cosmetic issues are often left for buyers, but major functional systems like failing plumbing are usually mandatory fixes in Boonton."
+  },
+  {
+    icon: AlertCircle,
+    question: "What is the most common reason a property fails to sell?",
+    answer: "Failed inspections—often due to aging roofs or deteriorating cast iron sewer lines—are the primary cause of deal cancellations."
+  },
+  {
+    icon: DollarSign,
+    question: "How much to replumb a 2000 square foot house?",
+    answer: "Expect to pay $8,000 to $18,000 for a full repiping of a 2,000 sq ft home in the Boonton area."
+  },
+  {
+    icon: DollarSign,
+    question: "What does it cost to replace cast iron pipes?",
+    answer: "For specific sections, expect $300-$600 per linear foot. Full house replacement projects are quoted by custom assessment."
+  },
+  {
+    icon: Info,
+    question: "Is cast iron 100% steel?",
+    answer: "No, cast iron contains 2-4% carbon and other alloys, making it more brittle than steel but more resistant to certain types of corrosion."
   }
 ];
 
@@ -113,10 +138,10 @@ const FAQ = () => {
             Expert Knowledge Base
           </div>
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6 uppercase tracking-tight">
-            Beaverton <span className="text-indigo-600">Water Heater FAQ</span>
+            Boonton <span className="text-indigo-600">Repiping FAQ</span>
           </h2>
           <p className="text-slate-600 text-lg leading-relaxed font-medium italic">
-            Everything you need to know about water heater repair in Beaverton. Have more questions? Call our experts at (877) 792-1410.
+            Everything you need to know about Boonton cast iron pipe replacement. Have more questions? Call our experts at (877) 792-1410.
           </p>
         </div>
 

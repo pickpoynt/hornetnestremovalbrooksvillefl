@@ -15,32 +15,32 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-slate-50">
       <Helmet>
-        <title>water heater repair beaverton | Beaverton Water Heater Repair Pros</title>
-        <meta name="description" content="Professional water heater repair beaverton. Expert tank & tankless water heater repair, replacement, and maintenance. Call (877) 792-1410 for a free estimate in Beaverton, OR." />
-        <meta name="keywords" content="water heater repair beaverton, beaverton water heater replacement, tankless water heater beaverton, hot water heater repair beaverton OR, water heater maintenance beaverton" />
-        <link rel="canonical" href="https://waterheaterrepairbeaverton.vercel.app/" />
+        <title>cast iron pipe replacement boonton (877) 792-1410 | Boonton Cast Iron Pipe Replacement Pros</title>
+        <meta name="description" content="Professional cast iron pipe replacement boonton. (877) 792-1410. Expert residential repiping, sewer line replacement, and copper/PEX upgrades in Boonton, NJ." />
+        <meta name="keywords" content="cast iron pipe replacement boonton, boonton NJ repiping, sewer line replacement Boonton, old pipe replacement Boonton, plumbing upgrades Boonton NJ" />
+        <link rel="canonical" href="https://castironpipereplacementboonton.vercel.app/" />
 
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "Beaverton Water Heater Repair Pros",
+            "name": "Boonton Cast Iron Pipe Replacement Pros",
             "image": "/4.jpeg",
-            "@id": "https://waterheaterrepairbeaverton.vercel.app/",
-            "url": "https://waterheaterrepairbeaverton.vercel.app/",
+            "@id": "https://castironpipereplacementboonton.vercel.app/",
+            "url": "https://castironpipereplacementboonton.vercel.app/",
             "telephone": "(877) 792-1410",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Beaverton, OR",
-              "addressLocality": "Beaverton",
-              "addressRegion": "OR",
-              "postalCode": "97005",
+              "streetAddress": "Boonton, NJ",
+              "addressLocality": "Boonton",
+              "addressRegion": "NJ",
+              "postalCode": "07005",
               "addressCountry": "US"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": "45.4871",
-              "longitude": "-122.8037"
+              "latitude": "40.9032",
+              "longitude": "-74.4074"
             },
             "openingHoursSpecification": {
               "@type": "OpeningHoursSpecification",
@@ -55,32 +55,32 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "serviceType": "Water Heater Repair",
+            "serviceType": "Cast Iron Pipe Replacement",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Beaverton Water Heater Repair Pros"
+              "name": "Boonton Cast Iron Pipe Replacement Pros"
             },
             "areaServed": {
               "@type": "City",
-              "name": "Beaverton, OR"
+              "name": "Boonton, NJ"
             },
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
-              "name": "Water Heater Services",
+              "name": "Repiping Services",
               "itemListElement": [
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Water Heater Repair" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Water Heater Replacement" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tankless Water Heater Installation" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Water Heater Maintenance" } }
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cast Iron Pipe Replacement" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sewer Line Replacement" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Whole House Repiping" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drain Line Replacement" } }
               ]
             }
           })}
         </script>
 
-        <meta property="og:title" content="water heater repair beaverton | Beaverton Water Heater Repair Pros" />
-        <meta property="og:description" content="Expert water heater repair in Beaverton, OR. Professional tank & tankless water heater services. Call (877) 792-1410!" />
+        <meta property="og:title" content="cast iron pipe replacement boonton (877) 792-1410 | Boonton Cast Iron Pipe Replacement Pros" />
+        <meta property="og:description" content="Expert cast iron pipe replacement in Boonton, NJ. Professional sewer line and drain pipe upgrades. Call (877) 792-1410!" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://waterheaterrepairbeaverton.vercel.app/" />
+        <meta property="og:url" content="https://castironpipereplacementboonton.vercel.app/" />
         <meta property="og:image" content="/4.jpeg" />
       </Helmet>
 
@@ -89,19 +89,19 @@ const Index = () => {
         <Hero
           title={
             <>
-              WATER HEATER REPAIR <br />
-              <span className="text-white drop-shadow-sm uppercase">in BEAVERTON OR</span>
+              CAST IRON PIPE REPLACEMENT <br />
+              <span className="text-white drop-shadow-sm uppercase">in BOONTON NJ</span>
             </>
           }
-          subtitle="Beaverton's trusted specialists in professional water heater repair, replacement, and maintenance. From downtown Beaverton to the surrounding Washington County areas, we restore your hot water fast with advanced diagnostics and certified plumbing expertise."
+          subtitle="Boonton's designated specialists in professional cast iron pipe replacement and modern repiping solutions. From historic Boonton homes to the surrounding Morris County area, we protect your property with advanced plumbing technology and certified expertise."
           image="/4.jpeg"
           overlayImage="/1.jpeg"
-          badge="BEAVERTON WATER HEATER PROS"
+          badge="BOONTON CAST IRON PROS"
           phone="8777921410"
           features={[
-            { icon: ShieldCheck, text: "Certified Repair" },
-            { icon: Zap, text: "Same-Day Service" },
-            { icon: Droplets, text: "Tank & Tankless" }
+            { icon: ShieldCheck, text: "Certified Repiping" },
+            { icon: Zap, text: "Rapid Replacement" },
+            { icon: Droplets, text: "Copper & PEX Upgrades" }
           ]}
         />
         <Services />
@@ -117,7 +117,7 @@ const Index = () => {
               <a href="https://leakingpiperepairinmodesto.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline">How much does pipe leak repair cost in Modesto?</a>
               <a href="https://plumbermontellowi.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline">Best plumber services in Montello WI</a>
               <a href="https://trenchlesssewerrepairscottsdaleaz.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline">Trenchless sewer repair options in Scottsdale AZ</a>
-              <a href="https://moldremediationeauclairewi.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline">Mold remediation specialists in Eau Claire WI</a>
+              <a href="https://waterheaterrepairbeaverton.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline">Expert water heater repair in Beaverton OR</a>
             </div>
           </div>
         </section>

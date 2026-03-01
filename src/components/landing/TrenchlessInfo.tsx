@@ -1,36 +1,36 @@
-import { ShieldCheck, Zap, Droplets, MapPin, Search, Hammer, Clock, Flame, Home, Target, Activity } from "lucide-react";
+import { ShieldCheck, Zap, Droplets, MapPin, Search, Hammer, Clock, Wrench, Home, Target, Activity } from "lucide-react";
 
 const TrenchlessInfo = () => {
     const knowledgeItems = [
         {
             icon: Search,
-            title: "Sediment & Mineral Buildup",
-            desc: "Why flushing your water heater matters: Beaverton's hard water causes rapid sediment accumulation that reduces efficiency and shortens tank lifespan significantly."
+            title: "Corrosion & Scaling",
+            desc: "Why understanding cast iron is essential: These pipes corrode from the inside out, creating scales that snag debris and lead to chronic Boonton basement backups."
         },
         {
             icon: Target,
-            title: "Anode Rod Inspection",
-            desc: "The sacrificial anode rod prevents tank corrosion. In Beaverton's mineral-rich water, these rods deplete faster and should be inspected every 2–3 years."
+            title: "Channeling & Cracks",
+            desc: "Understanding pipe failure: Over decades, the bottom of cast iron pipes can wear away completely (channeling), allowing sewage to erode the soil beneath your Boonton home."
         },
         {
             icon: ShieldCheck,
-            title: "Temperature & Pressure Relief",
-            desc: "How we keep your system safe: The T&P valve is a critical safety device. We test and replace faulty valves to protect your Beaverton home from dangerous pressure buildup."
+            title: "Modern Polymer Liners",
+            desc: "How we seal out leaks: Our specialized epoxy liners create a pipe-within-a-pipe, sealing cracks and preventing root intrusion without the mess of Boonton yard excavation."
         },
         {
             icon: MapPin,
-            title: "Beaverton Water Heater Experts",
-            desc: "Navigating Washington County's plumbing codes: We handle all permit requirements and code compliance for water heater installations and replacements in Beaverton, OR."
+            title: "Boonton Infrastructure Experts",
+            desc: "Navigating local plumbing hotspot: From historic main streets to hillside NJ developments, we handle cast iron failures of all sizes in Boonton."
         },
         {
             icon: Clock,
-            title: "Rapid Response Repairs",
-            desc: "Managing emergency repairs in the Pacific Northwest: We use specialized diagnostic tools that pinpoint water heater failures fast, minimizing cold-water downtime."
+            title: "Rapid Replumb Cycles",
+            desc: "Managing replacement in NJ winter: We use specialized bypass systems that maintain your home's functionality even during a full Boonton cast iron swap."
         },
         {
             icon: Activity,
-            title: "Post-Repair Certification",
-            desc: "Quality verification after every job: We test water temperature, pressure, and all safety systems before we leave, so you're confident your Beaverton system is fully operational."
+            title: "Pipe Health Certification",
+            desc: "Verification via expert scope: We provide thorough video documentation before and after replacement so you can be sure your Boonton property is protected."
         }
     ];
 
@@ -42,32 +42,32 @@ const TrenchlessInfo = () => {
                     <div className="space-y-8">
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-600 text-xs font-bold uppercase tracking-widest">
                             <MapPin className="w-4 h-4" />
-                            Beaverton Service Excellence
+                            Boonton Service Excellence
                         </div>
                         <h2 className="text-3xl md:text-5xl font-heading font-bold text-slate-900 leading-tight uppercase tracking-tight">
-                            Leading <span className="text-indigo-600">water heater repair beaverton</span>
+                            Leading <span className="text-indigo-600">cast iron pipe replacement boonton</span>
                         </h2>
                         <div className="space-y-6 text-slate-600 text-lg leading-relaxed font-medium">
                             <p>
-                                In the Pacific Northwest climate of Beaverton, Oregon, water heaters face unique challenges from hard water mineral deposits, fluctuating temperatures, and high usage demands. Our specialized repair technology diagnoses and fixes these issues, providing a reliable, long-term solution for Washington County's homeowners.
+                                In the historic neighborhoods of Boonton, New Jersey, aging cast iron plumbing often reaches its breaking point. Our targeted pipe replacement technology eliminates these dangerous failures, providing a secure solution for Morris County's most prestigious properties.
                             </p>
                             <p>
-                                Whether you're dealing with a leaking tank, a pilot light that won't stay lit, or a tankless unit throwing error codes, our certified Beaverton technicians provide a permanent fix without the guesswork or recurring repair cycles.
+                                Whether you're dealing with a single sluggish drain or a complete sewer collapse, our specialized epoxy residues and pipe-bursting methods offer a permanent fix without the worry of recurring backups in Boonton.
                             </p>
                         </div>
                         <div className="grid sm:grid-cols-2 gap-6 pt-4">
                             <div className="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                                 <ShieldCheck className="w-6 h-6 text-indigo-600 shrink-0" />
                                 <div>
-                                    <h4 className="font-bold text-slate-900 uppercase text-sm">Beaverton Area Ready</h4>
-                                    <p className="text-xs text-slate-500">Specialized expertise for OR Homes</p>
+                                    <h4 className="font-bold text-slate-900 uppercase text-sm">Boonton Area Ready</h4>
+                                    <p className="text-xs text-slate-500">Specialized equipment for NJ Homes</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                                 <Zap className="w-6 h-6 text-indigo-600 shrink-0" />
                                 <div>
-                                    <h4 className="font-bold text-slate-900 uppercase text-sm">Same-Day Repair</h4>
-                                    <p className="text-xs text-slate-500">Rapid response across Beaverton</p>
+                                    <h4 className="font-bold text-slate-900 uppercase text-sm">48-Hour Replacement</h4>
+                                    <p className="text-xs text-slate-500">Rapid response across Boonton</p>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +76,7 @@ const TrenchlessInfo = () => {
                         <div className="absolute -inset-4 bg-indigo-600/20 rounded-[3rem] blur-2xl opacity-30" />
                         <img
                             src="/3.jpeg"
-                            alt="Water Heater Repair Experts in Beaverton OR"
+                            alt="Cast Iron Pipe Replacement in Boonton"
                             className="rounded-[3rem] shadow-2xl border-8 border-white relative z-10 w-full object-cover aspect-square"
                         />
                     </div>
@@ -86,10 +86,10 @@ const TrenchlessInfo = () => {
                 <div id="knowledge-base" className="pt-24 border-t border-slate-100">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <h2 className="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6 uppercase tracking-tight">
-                            Water Heater <span className="text-indigo-600">Expert Knowledge Base</span>
+                            Repiping <span className="text-indigo-600">Expertise Center</span>
                         </h2>
                         <p className="text-slate-600 text-lg font-medium italic">
-                            Critical information for Beaverton homeowners exploring water heater repair and replacement options.
+                            Critical information for Boonton homeowners exploring cast iron pipe replacement options.
                         </p>
                     </div>
 
@@ -112,8 +112,8 @@ const TrenchlessInfo = () => {
                         <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-600/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
                             <div>
-                                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 uppercase tracking-tight">Need a Water Heater Consultation?</h3>
-                                <p className="text-slate-400 font-medium italic">Our Beaverton technicians provide expert diagnostics and written repair or replacement plans.</p>
+                                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 uppercase tracking-tight">Need a Repiping Consultation?</h3>
+                                <p className="text-slate-400 font-medium italic">Our Boonton technicians provide expert inspections and written replacement plans.</p>
                             </div>
                             <a
                                 href="tel:8777921410"
