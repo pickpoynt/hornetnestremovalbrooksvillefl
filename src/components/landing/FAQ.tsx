@@ -1,4 +1,4 @@
-import { HelpCircle, Search, ShieldCheck, Zap, Droplets, Clock, Hammer, DollarSign, Target, Radio, Thermometer, AlertCircle, FileText, Info, TrendingUp, CheckCircle, Home, Activity, Wrench, Shield, Waves, LucideIcon } from "lucide-react";
+import { HelpCircle, Search, ShieldCheck, Zap, Droplets, Clock, Hammer, DollarSign, Target, Radio, Thermometer, AlertCircle, FileText, Info, TrendingUp, CheckCircle, Home, Activity, Wrench, Shield, Waves, LucideIcon, Phone } from "lucide-react";
 
 const faqs = [
   {

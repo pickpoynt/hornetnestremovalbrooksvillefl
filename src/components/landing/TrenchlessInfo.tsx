@@ -1,4 +1,4 @@
-import { ShieldCheck, Zap, Droplets, MapPin, Search, Radio, Thermometer, Target, Activity, Shield, Home } from "lucide-react";
+import { ShieldCheck, Zap, Droplets, MapPin, Search, Radio, Thermometer, Target, Activity, Shield, Home, Phone } from "lucide-react";
 
 const TrenchlessInfo = () => {
     const knowledgeItems = [
