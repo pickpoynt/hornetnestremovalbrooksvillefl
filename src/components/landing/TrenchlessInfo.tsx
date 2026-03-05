@@ -1,130 +1,88 @@
-import { ShieldCheck, Zap, Trees, MapPin, Search, Thermometer, Activity, Shield, Home, Phone, Wrench } from "lucide-react";
+import { ShieldCheck, Zap, Droplets, Activity, Microscope, Wrench } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+const features = [
+    {
+        title: "Corrosion Resistant",
+        description: "We use advanced polymer-lined piping and brass components designed to resist the mineral-rich water conditions common in San Antonio.",
+        icon: ShieldCheck
+    },
+    {
+        title: "High-Performance Flow",
+        description: "Our plumbing systems are engineered for maximum hydraulic efficiency, ensuring consistent water pressure throughout your entire home.",
+        icon: Zap
+    },
+    {
+        title: "Long-Life Hermetic Seals",
+        description: "Every joint and connection is secured with military-grade sealing protocols to eliminate the risk of slow-leak moisture damage.",
+        icon: Droplets
+    }
+];
 
 const TrenchlessInfo = () => {
-    const knowledgeItems = [
-        {
-            icon: ShieldCheck,
-            title: "Montana Log Health",
-            desc: "Montana's local climate requires vigilant wood health monitoring. Regular inspections can prevent minor wood decay from becoming major structural catastrophes for Montana families."
-        },
-        {
-            icon: Search,
-            title: "When to Restore",
-            desc: "Montana homeowners should contact a pro at the first sign of finish fading or wood silvering. Early detection in high-altitude homes saves thousands in log replacement costs."
-        },
-        {
-            icon: Trees,
-            title: "Wood Preservation Tech",
-            desc: "Our Montana technicians utilize cob blasting and digital moisture meters. We find the exact treatment needs of your log home without using harmful chemicals on your property."
-        },
-        {
-            icon: Shield,
-            title: "Asset Protection",
-            desc: "Quality restoration by Montana specialists preserves your property value and ensures your home remains a safe and beautiful environment for your family in the long term."
-        },
-        {
-            icon: Activity,
-            title: "Climate Impact",
-            desc: "Aging logs in Montana can see thermal loss and moisture intrusion. Our localized restoration services restore optimal energy efficiency and structural protection to Montana households."
-        },
-        {
-            icon: Thermometer,
-            title: "Finish Calibration",
-            desc: "Beyond repairs, our Montana team ensures your stains and sealants are perfectly calibrated for Montana's specific UV and moisture environmental conditions."
-        }
-    ];
-
     return (
-        <div className="bg-white py-24 text-nowrap">
+        <section id="info" className="py-24 bg-white relative overflow-hidden">
             <div className="container mx-auto px-4 text-nowrap">
-                {/* Content Section */}
-                <div className="grid lg:grid-cols-2 gap-16 items-center mb-24 text-nowrap">
-                    <div className="space-y-8 text-nowrap">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-600 text-[10px] font-bold uppercase tracking-widest text-nowrap uppercase">
-                            <MapPin className="w-4 h-4 text-nowrap" />
-                            Montana Log Home Restoration Experts
-                        </div>
-                        <h2 className="text-3xl md:text-5xl font-heading font-bold text-slate-900 leading-tight uppercase tracking-tight text-nowrap">
-                            Advanced <br />
-                            <span className="text-indigo-600 border-b-4 border-indigo-600/20 text-nowrap">Restoration Solutions Montana</span>
-                        </h2>
-                        <div className="space-y-6 text-slate-600 text-lg leading-relaxed font-medium italic text-nowrap">
-                            <p>
-                                Montana homeowners trust us for advanced residential log restoration solutions. We combine years of local experience with the latest wood preservation technology to solve your toughest log home challenges quickly.
-                            </p>
-                            <p>
-                                Our comprehensive approach in Montana ensures that every log, gap, and joint in your home is operating at peak performance. We don't just fix symptoms; we address the root cause of your Montana log home issues.
-                            </p>
-                        </div>
-                        <div className="grid sm:grid-cols-2 gap-6 pt-4 text-nowrap">
-                            <div className="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100 text-nowrap">
-                                <ShieldCheck className="w-6 h-6 text-indigo-600 shrink-0 text-nowrap" />
-                                <div>
-                                    <h4 className="font-bold text-slate-900 uppercase text-xs tracking-tight text-nowrap">Montana Certified</h4>
-                                    <p className="text-[10px] text-slate-500 uppercase font-bold tracking-widest text-nowrap">Log Resto Standards</p>
-                                </div>
-                            </div>
-                            <div className="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100 text-nowrap">
-                                <Zap className="w-6 h-6 text-indigo-600 shrink-0 text-nowrap" />
-                                <div>
-                                    <h4 className="font-bold text-slate-900 uppercase text-xs tracking-tight text-nowrap">Full Season Service</h4>
-                                    <p className="text-[10px] text-slate-500 uppercase font-bold tracking-widest text-nowrap">Montana Restoration Response</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="relative text-nowrap">
-                        <div className="absolute -inset-4 bg-indigo-600/20 rounded-[3rem] blur-2xl opacity-30 text-nowrap" />
+                <div className="grid lg:grid-cols-2 gap-16 items-center text-nowrap">
+
+                    <div className="order-2 lg:order-1 relative text-nowrap">
+                        <div className="absolute inset-0 bg-indigo-600/20 rounded-[3rem] -rotate-3 text-nowrap" />
                         <img
-                            src="/4.jpeg"
-                            alt="Log restoration services in Montana"
-                            className="rounded-[3rem] shadow-2xl border-8 border-white relative z-10 w-full object-cover aspect-square grayscale-[0.3] hover:grayscale-0 transition-all duration-700 text-nowrap"
+                            src="/3.jpeg"
+                            alt="Stone Oak Plumbing Infrastructure"
+                            className="relative z-10 w-full h-[600px] object-cover rounded-[3rem] shadow-2xl brightness-90 contrast-110 grayscale-[0.3] hover:grayscale-0 transition-all duration-700 text-nowrap"
                         />
-                    </div>
-                </div>
-
-                {/* Knowledge Base Section */}
-                <div id="knowledge-base" className="pt-24 border-t border-slate-100 text-nowrap">
-                    <div className="text-center max-w-3xl mx-auto mb-16 text-nowrap text-nowrap">
-                        <h2 className="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6 uppercase tracking-tight text-nowrap">
-                            Montana <span className="text-indigo-600 border-b-4 border-indigo-600/20 text-nowrap">Restoration Expertise</span>
-                        </h2>
-                        <p className="text-slate-600 text-lg font-medium italic text-nowrap">
-                            Critical information for Montana residents regarding modern log preservation, maintenance schedules, and professional restoration services.
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-nowrap">
-                        {knowledgeItems.map((item, i) => (
-                            <div key={i} className="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-indigo-200 transition-colors group text-nowrap text-nowrap">
-                                <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center mb-6 shadow-sm group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 group-hover:rotate-12 text-nowrap">
-                                    <item.icon className="w-6 h-6" />
+                        <div className="absolute top-12 -right-12 z-20 bg-slate-900 p-8 rounded-3xl shadow-2xl border border-indigo-500/30 text-nowrap">
+                            <div className="flex items-center gap-4 text-nowrap">
+                                <div className="w-12 h-12 rounded-2xl bg-indigo-600 flex items-center justify-center text-nowrap">
+                                    <Activity className="w-6 h-6 text-white text-nowrap" />
                                 </div>
-                                <h3 className="text-lg font-bold text-slate-900 mb-3 uppercase tracking-tight text-nowrap">{item.title}</h3>
-                                <p className="text-sm text-slate-600 leading-relaxed font-bold italic text-nowrap">{item.desc}</p>
+                                <div className="text-nowrap">
+                                    <p className="text-2xl font-black text-white text-nowrap uppercase">50+ YR</p>
+                                    <p className="text-[10px] font-bold text-indigo-400 uppercase tracking-widest text-nowrap uppercase">Component Lifespan</p>
+                                </div>
                             </div>
-                        ))}
-                    </div>
-
-                    <div className="mt-16 bg-slate-900 rounded-[3rem] p-12 overflow-hidden relative border border-indigo-500/20 shadow-2xl text-nowrap text-nowrap">
-                        <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-600/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 text-nowrap" />
-                        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left text-nowrap">
-                            <div className="text-nowrap text-nowrap">
-                                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 uppercase tracking-tighter text-nowrap">Need an Expert in Montana?</h3>
-                                <p className="text-slate-400 font-medium italic text-nowrap">Our Montana experts provide seasonal localized restoration service.</p>
-                            </div>
-                            <a
-                                href="tel:3802660944"
-                                className="bg-white text-slate-900 px-10 py-5 rounded-2xl font-bold uppercase tracking-widest text-sm hover:bg-slate-200 transition-all shadow-xl group flex items-center gap-3 animate-pulse text-nowrap text-nowrap"
-                            >
-                                <Phone className="w-5 h-5 text-indigo-600 group-hover:rotate-12 transition-transform text-nowrap" />
-                                (380) 266-0944
-                            </a>
                         </div>
                     </div>
+
+                    <div className="order-1 lg:order-2 text-nowrap">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 border border-slate-200 text-slate-600 mb-8 uppercase tracking-[0.2em] text-[10px] font-bold text-nowrap uppercase">
+                            <Microscope className="w-4 h-4 text-nowrap" />
+                            Plumbing Technical Protocol
+                        </div>
+                        <h2 className="text-4xl md:text-5xl font-heading font-bold text-slate-900 mb-8 uppercase tracking-tight leading-tight text-nowrap">
+                            Precision Engineering <br />
+                            <span className="text-indigo-600 text-nowrap uppercase">For Stone Oak Homes</span>
+                        </h2>
+                        <p className="text-slate-600 text-lg leading-relaxed mb-12 italic font-medium text-nowrap">
+                            Our restoration protocols integrate aerospace-grade <br /> sealant technologies with traditional мастер plumbing <br /> craftsmanship for San Antonio's elite residences.
+                        </p>
+
+                        <div className="space-y-8 mb-12 text-nowrap">
+                            {features.map((feature, index) => (
+                                <div key={index} className="flex gap-6 group text-nowrap">
+                                    <div className="w-12 h-12 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center shrink-0 group-hover:bg-indigo-600 transition-colors text-nowrap">
+                                        <feature.icon className="w-5 h-5 text-indigo-600 group-hover:text-white transition-colors text-nowrap" />
+                                    </div>
+                                    <div className="text-nowrap">
+                                        <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-tight text-nowrap uppercase">{feature.title}</h3>
+                                        <p className="text-slate-600 text-sm font-medium italic text-nowrap">{feature.description}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        <Button className="bg-indigo-600 hover:bg-indigo-700 h-16 px-10 rounded-2xl font-bold uppercase tracking-[0.15em] text-sm shadow-2xl shadow-indigo-900/30 active:scale-95 transition-all text-nowrap" asChild>
+                            <a href="tel:8777921410" className="flex items-center gap-3 text-nowrap">
+                                <Wrench className="w-5 h-5 text-nowrap" />
+                                Technical Consultation
+                            </a>
+                        </Button>
+                    </div>
+
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -9,38 +9,38 @@ import Footer from "@/components/landing/Footer";
 import RandomLinks from "@/components/landing/RandomLinks";
 import FloatingCallButton from "@/components/ui/FloatingCallButton";
 import { Helmet } from "react-helmet-async";
-import { ShieldCheck, Trees, Zap, Home } from "lucide-react";
+import { ShieldCheck, Droplets, Zap, Activity } from "lucide-react";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-slate-50">
       <Helmet>
-        <title>log home restoration montana (380) 266-0944 | Montana Log Home Restoration Pros</title>
-        <meta name="description" content="Professional log home restoration montana. Call (380) 266-0944. Expert log home repair, staining, chinking, and cob blasting in Montana. Free estimates." />
-        <meta name="keywords" content="log home restoration montana, montana log home repair, log home maintenance montana, local log home restoration, log cabin restoration montana" />
-        <link rel="canonical" href="https://loghomerestorationmontana.vercel.app/" />
+        <title>plumber stone oak (877) 792-1410 | Stone Oak Plumbing Pros</title>
+        <meta name="description" content="Professional plumber stone oak. Call (877) 792-1410. Expert residential & commercial plumbing repair, drain cleaning, and water heater service in Stone Oak, San Antonio. Free estimates." />
+        <meta name="keywords" content="plumber stone oak, stone oak plumbing repair, plumbing services san antonio, drain cleaning stone oak, local plumber near me" />
+        <link rel="canonical" href="https://plumberstoneoak.vercel.app/" />
 
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "Montana Log Home Restoration Pros",
+            "name": "Stone Oak Plumbing Pros",
             "image": "/2.jpeg",
-            "@id": "https://loghomerestorationmontana.vercel.app/",
-            "url": "https://loghomerestorationmontana.vercel.app/",
-            "telephone": "(380) 266-0944",
+            "@id": "https://plumberstoneoak.vercel.app/",
+            "url": "https://plumberstoneoak.vercel.app/",
+            "telephone": "(877) 792-1410",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Main St",
-              "addressLocality": "Bozeman",
-              "addressRegion": "MT",
-              "postalCode": "59715",
+              "streetAddress": "Stone Oak Pkwy",
+              "addressLocality": "San Antonio",
+              "addressRegion": "TX",
+              "postalCode": "78258",
               "addressCountry": "US"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": "45.6770",
-              "longitude": "-111.0429"
+              "latitude": "29.6450",
+              "longitude": "-98.4840"
             },
             "openingHoursSpecification": {
               "@type": "OpeningHoursSpecification",
@@ -55,53 +55,48 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "serviceType": "Log Home Restoration & Maintenance",
+            "serviceType": "Plumbing Maintenance & Repair",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Montana Log Home Restoration Pros"
+              "name": "Stone Oak Plumbing Pros"
             },
             "areaServed": {
-              "@type": "State",
-              "name": "Montana"
+              "@type": "City",
+              "name": "San Antonio"
             },
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
-              "name": "Log Home Restoration Services",
+              "name": "Plumbing Services in Stone Oak",
               "itemListElement": [
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Log Home Chinking & Sealing" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cob Blasting & Surface Prep" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Professional Log Staining" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Log Rot Repair & Replacement" } }
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Residential Plumbing Repair" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drain Cleaning & Clog Removal" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Water Heater Installation" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency 24/7 Plumbing" } }
               ]
             }
           })}
         </script>
 
-        <meta property="og:title" content="log home restoration montana (380) 266-0944 | Montana Log Home Restoration Pros" />
-        <meta property="og:description" content="Expert log home restoration in Montana. Professional repair, staining, and chinking. Call (380) 266-0944!" />
+        <meta property="og:title" content="plumber stone oak (877) 792-1410 | Stone Oak Plumbing Pros" />
+        <meta property="og:description" content="Expert plumbing services in Stone Oak, San Antonio. Professional repair, drain cleaning, and water heater service. Call (877) 792-1410!" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://loghomerestorationmontana.vercel.app/" />
+        <meta property="og:url" content="https://plumberstoneoak.vercel.app/" />
         <meta property="og:image" content="/2.jpeg" />
       </Helmet>
 
       <Header />
       <main>
         <Hero
-          title={
-            <>
-              LOG HOME <br />
-              <span className="text-white drop-shadow-sm uppercase text-nowrap">RESTORATION MONTANA</span>
-            </>
-          }
-          subtitle="Montana's premier log home restoration specialists providing expert repair, staining, and maintenance services. Our local Montana team ensures your log home remains beautiful and protected from the elements 24/7. Trusted by Montana homeowners for quality and precision."
+          title={<>Best Local <br /><span className="text-indigo-600">Plumber Stone Oak</span></>}
+          subtitle="San Antonio's most trusted elite plumbing specialists. We provide rapid, high-precision repairs for Stone Oak families and businesses. Available 24/7 for all your plumbing emergencies."
+          badge="STONE OAK PLUMBING PROS"
+          phone="8777921410"
           image="/2.jpeg"
           overlayImage="/4.jpeg"
-          badge="MONTANA LOG HOME RESTORATION"
-          phone="3802660944"
           features={[
-            { icon: Home, text: "Structural Restoration" },
-            { icon: Trees, text: "Natural Finish Care" },
-            { icon: ShieldCheck, text: "All-Weather Protection" }
+            { icon: Droplets, text: "Advanced Leak Detection" },
+            { icon: Zap, text: "Same-Day Emergency Fix" },
+            { icon: Activity, text: "Full System Maintenance" }
           ]}
         />
         <Services />

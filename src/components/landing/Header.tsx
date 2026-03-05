@@ -1,5 +1,5 @@
+import { Phone, Menu, X, Droplets, Zap, ShieldCheck } from "lucide-react";
 import { useState, useEffect } from "react";
-import { Menu, X, Phone, Trees } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -7,102 +7,119 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 20);
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <>
-      {/* Mobile Sticky Click-to-Call Header (Visible only on mobile/tablet) */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 z-[60] bg-indigo-600 text-white py-3 px-4 flex justify-between items-center shadow-md">
-        <div className="flex items-center gap-2">
-          <Trees className="w-5 h-5 text-nowrap" />
-          <span className="font-bold text-xs uppercase tracking-tight text-nowrap">Montana Log Home Restoration Pros</span>
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
+            ? "bg-slate-900/95 backdrop-blur-md py-3 shadow-2xl border-b border-indigo-500/20"
+            : "bg-transparent py-5"
+          }`}
+      >
+        {/* Mobile Sticky click-to-call Header (shown only on mobile) */}
+        <div className="md:hidden absolute top-0 left-0 w-full bg-indigo-600 py-1 flex justify-center items-center gap-2">
+          <Phone className="w-3 h-3 text-white animate-pulse" />
+          <a href="tel:8777921410" className="text-[10px] font-black text-white uppercase tracking-widest text-nowrap">
+            Stone Oak 24/7 Hotline: (877) 792-1410
+          </a>
         </div>
-        <a href="tel:3802660944" className="flex items-center gap-2 bg-white text-indigo-600 px-4 py-1.5 rounded-full font-bold text-xs animate-pulse">
-          <Phone className="w-3.5 h-3.5" />
-          CALL NOW
-        </a>
-      </div>
 
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "bg-white/95 backdrop-blur-md py-4 shadow-lg border-b border-blue-50" : "bg-transparent py-6"} ${"lg:block hidden"}`}>
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 mt-6 md:mt-0">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2 group cursor-pointer text-nowrap">
-              <div className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-300 ${isScrolled ? "bg-indigo-600" : "bg-white/10 backdrop-blur-md border border-white/20 rotate-[-10deg] group-hover:rotate-0"}`}>
-                <Trees className={`w-7 h-7 text-nowrap ${isScrolled ? "text-white" : "text-indigo-400"}`} />
+            {/* Branding */}
+            <div className="flex items-center gap-3 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+              <div className="w-12 h-12 rounded-2xl bg-indigo-600 flex items-center justify-center shadow-lg shadow-indigo-900/40 group-hover:scale-110 transition-all">
+                <Droplets className="w-6 h-6 text-white" />
               </div>
               <div className="text-nowrap">
-                <span className={`font-heading font-bold text-xl md:text-2xl block leading-none tracking-tight text-nowrap ${isScrolled ? "text-indigo-950" : "text-white"}`}>
-                  Montana
-                </span>
-                <span className={`text-sm font-bold uppercase tracking-[0.2em] text-nowrap ${isScrolled ? "text-indigo-600" : "text-indigo-400"}`}>
-                  LOG HOME <span className="text-[10px] opacity-70 px-1 text-nowrap">RESTORATION Pros</span>
-                </span>
+                <h1 className="text-xl md:text-2xl font-black text-white uppercase tracking-tighter leading-none">
+                  Stone Oak <span className="text-indigo-400">Plumbing</span>
+                </h1>
+                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.3em] mt-1">San Antonio Elite Restoration</p>
               </div>
             </div>
 
-            <nav className="hidden xl:flex items-center gap-8">
-              {["services", "why-us", "faq", "contact"].map((link) => (
-                <a key={link} href={`#${link}`} className={`text-sm font-bold uppercase tracking-widest transition-all hover:scale-105 ${isScrolled ? "text-slate-600 hover:text-indigo-600" : "text-white/90 hover:text-white"}`}>
-                  {link.replace("-", " ")}
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex items-center gap-8">
+              {["Services", "Why Us", "Info", "Contact", "FAQ"].map((item) => (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase().replace(" ", "-")}`}
+                  className="text-xs font-bold text-slate-300 hover:text-indigo-400 uppercase tracking-widest transition-colors"
+                >
+                  {item}
                 </a>
               ))}
-              <a href="/lease-my-number" className={`text-sm font-bold uppercase tracking-widest transition-all hover:scale-105 ${isScrolled ? "text-slate-600 hover:text-indigo-600" : "text-white/90 hover:text-white"}`}>
-                Lease
-              </a>
             </nav>
 
-            <div className="hidden lg:flex items-center gap-6">
-              <div className={`flex flex-col items-end ${isScrolled ? "text-slate-900" : "text-white"}`}>
-                <p className="text-slate-400 text-sm mb-2 uppercase tracking-widest font-bold text-nowrap">MONTANA RESTORATION LINE</p>
-                <a href="tel:3802660944" className="text-3xl font-bold text-indigo-400 block mb-6 text-nowrap">(380) 266-0944</a>
+            {/* Hotline & CTA */}
+            <div className="hidden md:flex items-center gap-6">
+              <div className="text-right border-r border-white/10 pr-6">
+                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1 italic">24/7 San Antonio Dispatch</p>
+                <a href="tel:8777921410" className="text-xl font-black text-white hover:text-indigo-400 transition-colors text-nowrap">
+                  (877) 792-1410
+                </a>
               </div>
-              <Button className={`${isScrolled ? "bg-indigo-600 hover:bg-indigo-700" : "bg-white text-slate-900 hover:bg-indigo-50"} h-12 px-8 rounded-xl font-bold shadow-xl transition-all hover:-translate-y-0.5 text-nowrap`} asChild>
-                <a href="tel:3802660944">Book Now</a>
+              <Button className="bg-white text-indigo-900 hover:bg-slate-100 font-bold uppercase tracking-widest text-xs px-8 h-12 rounded-xl shadow-xl shadow-white/5 active:scale-95 transition-all text-nowrap" asChild>
+                <a href="tel:8777921410">Schedule Now</a>
               </Button>
             </div>
 
-            <button className="xl:hidden p-2 text-nowrap" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-              {isMobileMenuOpen ? <X className={`w-8 h-8 ${isScrolled ? "text-slate-900" : "text-white"}`} /> : <Menu className={`w-8 h-8 ${isScrolled ? "text-slate-900" : "text-white"}`} />}
+            {/* Mobile Toggle */}
+            <button
+              className="lg:hidden w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-white border border-white/10"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </div>
       </header>
 
-      {/* Main Header for Mobile (Adjusted for top sticky bar) */}
-      <header className={`lg:hidden fixed top-[44px] left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "bg-white/95 backdrop-blur-md py-4 shadow-lg border-b border-blue-50" : "bg-slate-950/80 backdrop-blur-sm py-4"}`}>
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Trees className="w-8 h-8 text-indigo-500" />
-              <span className="font-bold text-white text-sm uppercase text-nowrap">Montana Log Home Resto Pros</span>
+      {/* Mobile Menu */}
+      <div
+        className={`fixed inset-0 z-[60] bg-slate-950/98 backdrop-blur-xl transition-all duration-500 lg:hidden ${isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none translate-x-full"
+          }`}
+      >
+        <div className="p-8">
+          <div className="flex justify-between items-center mb-16">
+            <div className="flex items-center gap-3">
+              <Droplets className="w-8 h-8 text-indigo-500" />
+              <span className="text-2xl font-black text-white uppercase tracking-tighter">Stone Oak Pros</span>
             </div>
-            <button className="p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-              {isMobileMenuOpen ? <X className="w-8 h-8 text-white text-nowrap" /> : <Menu className="w-8 h-8 text-white text-nowrap" />}
+            <button onClick={() => setIsMobileMenuOpen(false)} className="text-white">
+              <X className="w-8 h-8" />
             </button>
           </div>
-        </div>
 
-        {isMobileMenuOpen && (
-          <div className="bg-slate-900 text-white p-6 absolute top-full left-0 right-0 border-t border-slate-800 h-screen overflow-y-auto">
-            <div className="flex flex-col gap-6 text-nowrap">
-              {["Services", "Why Us", "FAQ", "Contact"].map((item) => (
-                <a key={item} href={`#${item.toLowerCase().replace(" ", "-")}`} className="text-lg font-bold tracking-wide hover:text-indigo-400 transition-colors py-4 border-b border-slate-800 uppercase" onClick={() => setIsMobileMenuOpen(false)}>{item}</a>
-              ))}
-              <a href="/lease-my-number" className="text-lg font-bold tracking-wide hover:text-indigo-400 transition-colors py-4 border-b border-slate-800 uppercase" onClick={() => setIsMobileMenuOpen(false)}>Lease Number</a>
-              <div className="pt-8 text-nowrap">
-                <p className="text-slate-400 text-xs mb-2 uppercase tracking-widest font-bold text-nowrap">MONTANA RESTORATION HOTLINE</p>
-                <a href="tel:3802660944" className="text-4xl font-bold text-indigo-400 block mb-8 underline decoration-indigo-600/30 underline-offset-8 text-nowrap">(380) 266-0944</a>
-                <Button className="w-full bg-indigo-600 hover:bg-indigo-700 text-white h-16 text-xl font-bold rounded-2xl shadow-xl shadow-indigo-900/40" asChild>
-                  <a href="tel:3802660944">CLICK TO CALL NOW</a>
-                </Button>
-              </div>
-            </div>
+          <div className="flex flex-col gap-8 mb-16">
+            {["Services", "Why Us", "Info", "Contact", "FAQ"].map((item) => (
+              <a
+                key={item}
+                href={`#${item.toLowerCase().replace(" ", "-")}`}
+                className="text-4xl font-black text-white hover:text-indigo-500 transition-colors uppercase tracking-tighter"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {item}
+              </a>
+            ))}
           </div>
-        )}
-      </header>
+
+          <div className="p-8 bg-indigo-600 rounded-[2rem] text-white">
+            <p className="text-[10px] font-black uppercase tracking-[0.3em] mb-4 opacity-70">San Antonio Hotline</p>
+            <a href="tel:8777921410" className="text-3xl font-black block mb-6 text-nowrap">(877) 792-1410</a>
+            <Button className="w-full bg-white text-indigo-600 h-14 rounded-2xl font-black uppercase tracking-widest shadow-xl text-nowrap">
+              Express Dispatch
+            </Button>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

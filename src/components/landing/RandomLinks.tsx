@@ -1,14 +1,11 @@
 const links = [
-  { text: "Pest Control South Point Ohio", url: "https://pestcontrolsouthpointohio.vercel.app/" },
-  { text: "Rodent Control Corvallis Oregon", url: "https://rodentcontrolcorvallisoregon.vercel.app/" },
-  { text: "Termite Inspection Burbank", url: "https://termiteinspectionburbank.vercel.app/" },
-  { text: "Coyote Control McCook NE", url: "https://coyotecontrolmccookne.vercel.app/" },
-  { text: "Leaking Pipe Repair Modesto", url: "https://leakingpiperepairinmodesto.vercel.app/" },
-  { text: "Water Heater Repair Beaverton", url: "https://waterheaterrepairbeaverton.vercel.app/" },
+  { text: "Emergency Tree Service Dallas", url: "https://emergencytreeservicedallas.vercel.app/" },
+  { text: "Cast Iron Pipe Replacement Akron", url: "https://castironpipereplacementakron.vercel.app/" },
+  { text: "Galvanized Pipe Replacement Akron", url: "https://galvanizedpipereplacementakron.vercel.app/" },
+  { text: "Slab Leak Repair Boonton NJ", url: "https://slableakrepairboontonnj.vercel.app/" },
   { text: "Cast Iron Pipe Replacement Boonton", url: "https://castironpipereplacementboonton.vercel.app/" },
-  { text: "Slab Leak Detection Boonton", url: "https://slableakdetectionspecialistboonton.vercel.app/" },
   { text: "Polybutylene Pipe Replacement Boonton", url: "https://polybutylenepipereplacementboonton.vercel.app/" },
-  { text: "Trenchless Sewer Repair Scottsdale AZ", url: "https://trenchlesssewerrepairscottsdaleaz.vercel.app/" }
+  { text: "Emergency Plumber Boonton NJ", url: "https://emergencyplumberboontonnj.vercel.app/" }
 ];
 
 const RandomLinks = () => {
