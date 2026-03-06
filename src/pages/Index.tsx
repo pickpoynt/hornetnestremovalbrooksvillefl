@@ -135,10 +135,10 @@ const Index = () => {
           <div className="container mx-auto px-4 text-nowrap">
             <h2 className="text-2xl font-bold mb-6 text-slate-800 uppercase tracking-tight">Our Professional Resource Network</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-8">
-              <a href="https://notenttermitetreatmentbrooksvillefl.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline uppercase tracking-tighter">No Tent Termite Treatment Brooksville FL</a>
-              <a href="https://raccooncontrolsouthwestranches.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline uppercase tracking-tighter">Raccoon Control Southwest Ranches</a>
-              <a href="https://wildliferemovalgastonianc.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline uppercase tracking-tighter">Wildlife Removal Gastonia NC</a>
-              <a href="https://wildliferemovaldouglasvillega.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline uppercase tracking-tighter">Wildlife Removal Douglasville GA</a>
+              <a href="https://plumberstoneoak.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline uppercase tracking-tighter">Plumber Stone Oak</a>
+              <a href="https://notenttermitetreatmentbrooksvillefl.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline uppercase tracking-tighter">No Tent Termite Treatment Brooksville</a>
+              <a href="https://polybutylenepipereplacementboonton.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline uppercase tracking-tighter">Polybutylene Pipe Replacement Boonton</a>
+              <a href="https://slableakdetectionspecialistboonton.vercel.app/" className="text-indigo-600 hover:text-indigo-800 font-bold transition-colors underline uppercase tracking-tighter">Slab Leak Detection Boonton</a>
             </div>
           </div>
         </section>
